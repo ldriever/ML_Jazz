@@ -24,6 +24,15 @@ The list below indicates in which group all of the files in this repository belo
 - *loss_comparison_for_chords_only_model.png* - a plot of training and validation loss for the chords-only model. This is referred to in the report
 - *loss_comparison_for_model_with_melody* - a plot of training and validation loss for the model with melody information. This is referred to in the report
 
+### Dependencies
+Please note that, in order to run the code for this project, it is necessary to have the following Python libraries installed:
+- Numpy
+- Pandas
+- Pytorch
+- Pytorch Lightning
+- Pickle
+- SQLAlchemy
+
 # Running the Data Handling Files
 STELLA WRITE HERE
 
