@@ -9,8 +9,10 @@ All of the results obtained for this project can be replicated using the code in
 The list below indicates in which group all of the files in this repository belong to. Not that there are also files corresponding to the final report of this project.
 
 ### Data Handling Files
-- *wjazzd.db - the database file for the Weiar Jazz Database
-- FILE
+- *wjazzd.db* - the database file for the Weiar Jazz Database. The file is larger than GitHubs file size limit and is thus uploaded in compressed format. Please unzip before use
+- *output_options.pt* - the data file containing the set of possible output chords
+- *data_array_without_melody.pt* - the created data file containing the inputs for the model using chords only
+- *data_array_with_melody.pt* - the created data file containing the inputs for the model with melody information. The file is larger than GitHubs file size limit and is thus uploaded in compressed format. Please unzip before use
 - FILE
 - FILE
 
