@@ -4,7 +4,23 @@
 
 The code in this repository is aimed at chord prediction using machine learning. The aim of the project is to investigate whether including melody information in the input data is able to improve prediction accuracy compared to a model that only takes chord progressions as input. This is investigated using the [Weimar Jazz Database](https://jazzomat.hfm-weimar.de/dbformat/dboverview.html) and LSTM neural networks.
 
-All of the results obtained for this project can be replicated using the code in this repository. Overall, the majority of the code can be divided into two parts: data handling and machine learning tasks. The data handling files have as ultimate output the data files *output_options.pt*, *data_array_without_melody.pt* and *data_array_with_melody.pt*. The machine learning files take these data files as input and produce the desired chord prediction accuracies. In addition, there is also a group of files linked to reporting. THe only code in this group is the file *permutation_test.py* used to assess the statistical significance of the results for the report.
+All of the results obtained for this project can be replicated using the code in this repository. Overall, the majority of the code can be divided into two parts: data handling and machine learning tasks. The data handling files have as ultimate output the data files *output_options.pt*, *data_array_without_melody.pt* and *data_array_with_melody.pt*. The machine learning files take these data files as input and produce the desired chord prediction accuracies. Therefore, it is important to note that there is no need to run the data handling files to generate the input data files as they are already provided as `.pt` files. In addition, there is also a group of files linked to reporting. The only code in this group is the file *permutation_test.py* used to assess the statistical significance of the results for the report.
+
+### Directory structure
+```
+Directory:
+    LSTM_maker.py
+    ML_main.ipynb
+    NN_data_helpers.py
+    README.md
+    data_array_with_melody.pt.zip
+    data_array_without_melody.pt
+    loss_comparison_for_chords_only_model.png
+    loss_comparison_for_model_with_melody.png
+    output_options.pt
+    output_options.pt.zip
+    permutation_test.py
+```
 
 ### Data Handling Files
 - *wjazzd.db* - the database file for the Weiar Jazz Database. The file is larger than GitHubs file size limit and is thus uploaded in compressed format. Please unzip before use
