@@ -42,13 +42,12 @@ Directory:
 - *permutation-test.py* - code used for testing the statistical significnace of the results
 
 ### Dependencies
-Please note that, in order to run the code for this project, it is necessary to have the following Python libraries installed:
-- Numpy
-- Pandas
-- Pytorch
-- Pytorch Lightning
-- Pickle
-- SQLAlchemy
+Please note that, in order to run the code for this project, it is necessary to have the following Python libraries installed. Click the hyperlinks to visit the respective websites and find out more about the different dependencies.
+- [Numpy](https://numpy.org/)
+- [Pandas](https://pandas.pydata.org/)
+- [Pytorch](https://pytorch.org/)
+- [Pytorch Lightning](https://www.pytorchlightning.ai/)
+- [SQLAlchemy](https://www.sqlalchemy.org/)
 
 # Running the Data Handling Files
 STELLA WRITE HERE
