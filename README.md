@@ -37,23 +37,26 @@ ML_Jazz:
 ```
 
 ### Data Handling Files
-- *wjazzd.db* - the database file for the Weiar Jazz Database. The file is larger than GitHubs file size limit and is thus uploaded in compressed format. Please unzip before use
-- *output_options.pt* - the data file containing the set of possible output chords
-- *data_array_without_melody.pt* - the created data file containing the inputs for the model using chords only
-- *data_array_with_melody.pt* - the created data file containing the inputs for the model with melody information. The file is larger than GitHubs file size limit and is thus uploaded in compressed format. Please unzip before use
-- FILE
-- FILE
+- `data processing/datasets/wjazzd.db` - the database file for the Weiar Jazz Database. The file is larger than GitHubs file size limit and is thus uploaded in compressed format. Please unzip before use.
+- `data processing/Data_Processing.ipynb` -
+- `data processing/data_maker.py` - 
+- `data processing/data_maker_helpers.py` - 
+- `data processing/music_data_functions` - 
+- `model/output_options.pt` - the data file containing the set of possible output chords
+- `model/data_array_without_melody.pt` - the created data file containing the inputs for the model using chords only
+- `model/data_array_with_melody.pt` - the created data file containing the inputs for the model with melody information. The file is larger than GitHubs file size limit and is thus uploaded in compressed format. Please unzip before use.
 
-### Machine Learning Files
-- *NN_data_helpers.py* - a python file with helper functions that convert the processed data into the format suitable to be handled by the ML model
-- *LSTM_maker.py* - a python file in which the neural network is defined
-- *ML_main.ipynb* - a python notebook that is used to run the ML model
+### Machine Learning Files 
+##### *(these can be found in the `model` folder)*
+- `NN_data_helpers.py` - a python file with helper functions that convert the processed data into the format suitable to be handled by the ML model
+- `LSTM_maker.py` - a python file in which the neural network is defined
+- `ML_main.ipynb` - a python notebook that is used to run the ML model
 
 ### Report Files
-- *Improving Chord Prediction in Jazz Music using Melody Information.pdf* - the final report documenting the project
-- *figures/loss_comparison_for_chords_only_model.png* - a plot of training and validation loss for the chords-only model. This is referred to in the report
-- *figures/loss_comparison_for_model_with_melody* - a plot of training and validation loss for the model with melody information. This is referred to in the report
-- *model/permutation-test.py* - code used for testing the statistical significnace of the results
+- `Improving Chord Prediction in Jazz Music using Melody Information.pdf` - the final report documenting the project
+- `figures/loss_comparison_for_chords_only_model.png` - a plot of training and validation loss for the chords-only model. This is referred to in the report
+- `figures/loss_comparison_for_model_with_melody.png` - a plot of training and validation loss for the model with melody information. This is referred to in the report
+- `model/permutation-test.py` - code used for testing the statistical significnace of the results
 
 ### Dependencies
 Please note that, in order to run the code for this project, it is necessary to have the following Python libraries installed. Click the hyperlinks to visit the respective websites and find out more about the different dependencies.
@@ -64,14 +67,14 @@ Please note that, in order to run the code for this project, it is necessary to 
 - [SQLAlchemy](https://www.sqlalchemy.org/)
 
 # Running the Data Handling Files
-STELLA WRITE HERE
+To produce the data used for training the model, please run the `Data_processing.ipynb` in the `data processing` folder. The code is currently configured to produce the data for model with meoldy information. Therefore, for chord-only data, please set the `melody_info` to `False` in cell 3 of the notebook file. Please note that the computation time can be very long.
 
 # Running the ML Model
-This can be done using the file *ML_main.ipynb*. This file can be run locally on a regular computer, but it is highly recommended to instead set it up on [Google Colab](https://colab.research.google.com/). This will require the user to either upload the files directly to Google Colab or to their Google Drive and to then mount their Google Drive in Colab. Also, dependencies such as Pytorch LIghtning may need to be installed. However, a full detailed explanation of how to use Google Colab is beyond the scope of this project.
+This can be done using the file `ML_main.ipynb` in the `model` folder. This file can be run locally on a regular computer, but it is highly recommended to instead set it up on [Google Colab](https://colab.research.google.com/). This will require the user to either upload the files directly to Google Colab or to their Google Drive and to then mount their Google Drive in Colab. Also, dependencies such as Pytorch LIghtning may need to be installed. However, a full detailed explanation of how to use Google Colab is beyond the scope of this project.
 
 When running the notebook it is important to ensure that all files (data and helper python files) are in the same relative locations as they are in this repository. Otherwise, if a different file tree is used, please make sure to adapt the file paths accordingly.
 
 It is then possible to run the model by running the different cells consecutively in their original order in the notebook. More information on which parameters can be changed to get different outputs can be found in the notebook.
 
 # Running the Permutation Test
-When running the file *permutation_test.py* please first run the ML model as this will create the necessary files *test_targets_melody.lst*, *test_predictions_melody.lst*, and *test_predictions_chords_only.lst*. Then, after ensuring that these files are in the same directory as the *permutation_test.py* file, simply run the file like a normal python file.
+When running the file `permutation_test.py` please first run the ML model as this will create the necessary files `test_targets_melody.lst`, `test_predictions_melody.lst`, and `test_predictions_chords_only.lst`. Then, after ensuring that these files are in the same directory as the `permutation_test.py` file, simply run the file like a normal python file.
