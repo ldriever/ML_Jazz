@@ -4,7 +4,7 @@
 
 The code in this repository is aimed at chord prediction using machine learning. The aim of the project is to investigate whether including melody information in the input data is able to improve prediction accuracy compared to a model that only takes chord progressions as input. This is investigated using the [Weimar Jazz Database](https://jazzomat.hfm-weimar.de/dbformat/dboverview.html) and LSTM neural networks.
 
-All of the results obtained for this project can be replicated using the code in this repository. Overall, the majority of the code can be divided into two parts: data handling and machine learning tasks. The data handling files have as ultimate output the data files *output_options.pt*, *data_array_without_melody.pt* and *data_array_with_melody.pt*. The machine learning files take these data files as input and produce the desired chord prediction accuracies. Therefore, it is important to note that there is no need to run the data handling files to generate the input data files as they are already provided as `.pt` files. Notice `data_array_with_melody.pt` is uploaded in compressed forma, therefore please unzip before using it. In addition, there is also a group of files linked to reporting. The only code in this group is the file *permutation_test.py* used to assess the statistical significance of the results for the report.
+All of the results obtained for this project can be replicated using the code in this repository. Overall, the majority of the code can be divided into two parts: data handling and machine learning tasks. The data handling files have as ultimate output the data files `output_options.pt`, `data_array_without_melody.pt` and `data_array_with_melody.pt`. The machine learning files take these data files as input and produce the desired chord prediction accuracies. Therefore, it is important to note that there is no need to run the data handling files to generate the input data files as they are already provided as `.pt` files. Notice `data_array_with_melody.pt` is uploaded in compressed forma, therefore please unzip before using it. In addition, there is also a group of files linked to reporting. The only code in this group is the file `permutation_test.py` used to assess the statistical significance of the results for the report.
 
 ### Directory structure
 ```
@@ -77,3 +77,7 @@ It is then possible to run the model by running the different cells consecutivel
 
 # Running the Permutation Test
 When running the file `permutation_test.py` please first run the ML model as this will create the necessary files `test_targets_melody.lst`, `test_predictions_melody.lst`, and `test_predictions_chords_only.lst`. Then, after ensuring that these files are in the same directory as the `permutation_test.py` file, simply run the file like a normal python file.
+
+# Citation for external libraries
+- Harris, C.R., Millman, K.J., van der Walt, S.J. et al. Array programming with NumPy. Nature 585, 357–362 (2020). DOI: 10.1038/s41586-020-2649-2. (Publisher link).
+- 
