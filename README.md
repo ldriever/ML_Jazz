@@ -9,8 +9,8 @@ All of the results obtained for this project can be replicated using the code in
 ### Directory structure
 ```
 ML_Jazz:
-│   README.md
 │   Improving Chord Prediction in Jazz Music using Melody Information.pdf
+│   README.md
 │
 ├───data processing
 │   │   Data_Processing.ipynb
@@ -30,7 +30,6 @@ ML_Jazz:
         data_array_with_melody.pt.zip (Please unzip before using it)
         data_array_without_melody.pt
         output_options.pt
-        output_options.pt.zip
         permutation_test.py
         ML_main.ipynb
         NN_data_helpers.py
