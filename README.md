@@ -37,10 +37,10 @@ ML_Jazz:
 
 ### Data Handling Files
 - `data processing/datasets/wjazzd.db` - the database file for the Weiar Jazz Database. The file is larger than GitHubs file size limit and is thus uploaded in compressed format. Please unzip before use.
-- `data processing/Data_Processing.ipynb` -
-- `data processing/data_maker.py` - 
-- `data processing/data_maker_helpers.py` - 
-- `data processing/music_data_functions` - 
+- `data processing/Data_Processing.ipynb` - a python notebook that is used to produce the input data for the model
+- `data processing/data_maker.py` - a python file containing the function that is the entry point to generate the data for the model
+- `data processing/data_maker_helpers.py` - a python file containing the helper functions that process the data provided in the WJazzD database for `data_maker.py`
+- `data processing/music_data_functions` - a python file containing the helper functions for `data_maker_helpers.py`
 - `model/output_options.pt` - the data file containing the set of possible output chords
 - `model/data_array_without_melody.pt` - the created data file containing the inputs for the model using chords only
 - `model/data_array_with_melody.pt` - the created data file containing the inputs for the model with melody information. The file is larger than GitHubs file size limit and is thus uploaded in compressed format. Please unzip before use.
