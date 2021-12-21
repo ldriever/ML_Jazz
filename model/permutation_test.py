@@ -52,7 +52,7 @@ for i in range(50000):
     array_2 = array_split[1]
     mean_diff.append(np.average(array_1[:, 0], weights=array_1[:, 1]) - np.average(array_2[:, 0], weights=array_2[:, 1]))
 
-# Then use the results to calculate and output the p vale
+# Then use the results to calculate and output the p value
 sum = 0
 for item in mean_diff:
     if abs(item) >= observed_mean:
