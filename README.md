@@ -60,10 +60,11 @@ ML_Jazz:
 ### Dependencies
 Please note that, in order to run the code for this project, it is necessary to have the following Python libraries installed. Click the hyperlinks to visit the respective websites and find out more about the different dependencies.
 - [Numpy](https://numpy.org/)
+- [SQLAlchemy](https://www.sqlalchemy.org/)
 - [Pandas](https://pandas.pydata.org/)
+- [mingus](https://bspaans.github.io/python-mingus/)
 - [Pytorch](https://pytorch.org/)
 - [Pytorch Lightning](https://www.pytorchlightning.ai/)
-- [SQLAlchemy](https://www.sqlalchemy.org/)
 
 # Running the Data Handling Files
 To produce the data used for training the model, please run the `Data_processing.ipynb` in the `data processing` folder. The code is currently configured to produce the data for model with meoldy information. Therefore, for chord-only data, please set the `melody_info` to `False` in cell 3 of the notebook file. Please note that the computation time can be very long.
@@ -80,4 +81,7 @@ When running the file `permutation_test.py` please first run the ML model as thi
 
 # Citation for external libraries
 - Harris, C.R., Millman, K.J., van der Walt, S.J. et al. Array programming with NumPy. Nature 585, 357–362 (2020). DOI: 10.1038/s41586-020-2649-2. (Publisher link).
-- 
+- M. Bayer, “Sqlalchemy,” in The Architecture of Open Source Applications Volume II: Structure, Scale, and a Few More Fearless Hacks, A. Brown and G. Wilson, Eds. aosabook.org, 2012.
+- Data structures for statistical computing in python, McKinney, Proceedings of the 9th Python in Science Conference, Volume 445, 2010.
+- T. Killeen, et.al. “Pytorch: An imperative style, high-performance deep learning library,” in Advances in Neural Information Processing Systems 32, H. Wallach, H. Larochelle, A. Beygelzimer, F. d'Alch ́e-Buc, E. Fox, and R. Garnett, Eds. Curran Associates, Inc., 2019, pp. 8024–8035.
+- Falcon, W., & The PyTorch Lightning team. (2019). PyTorch Lightning (Version 1.4) [Computer software]. https://doi.org/10.5281/zenodo.3828935
