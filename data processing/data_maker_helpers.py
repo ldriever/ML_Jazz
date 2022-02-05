@@ -21,7 +21,7 @@ This function will return a list containing within each element a dictionary con
 
 For the input arguments we have:
 - inputs       : array of two column; melids and multi-hot vectors
-- targets      : array of two coluns; melids and targets
+- targets      : array of two columns; melids and targets
 - num_sequence : number of unique melids in total
 
 '''
@@ -269,7 +269,7 @@ def make_data_set(melody, beats, melody_info, remove_slashes):
                 #Including melody information
                 if melody_info:
                     
-                    #Create associated target value
+                    #Create input vector
                     inputs.append([int(row['melid']), np.array(chord_to_notes_dict[new_chord] + pitch + [element[4]])])
                     
                     #Create associated target value
