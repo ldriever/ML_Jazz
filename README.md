@@ -21,17 +21,13 @@ ML_Jazz:
 │   └───datasets
 │           wjazzd.db
 │
-├───figures
-│       loss_comparison_for_chords_only_model.png
-│       loss_comparison_for_model_with_melody.png
-│
 └───model
-        LSTM_maker.py
+        LSTM_maker.py                                                           (TODO: Update to 10-fold)
         data_array_with_melody.pt.zip (Please unzip before using it)
         data_array_without_melody.pt
         output_options.pt
         permutation_test.py
-        ML_main.ipynb
+        ML_main.ipynb                                                           (TODO: Update to 10-fold)
         NN_data_helpers.py
 ```
 
@@ -52,9 +48,7 @@ ML_Jazz:
 - `ML_main.ipynb` - a python notebook that is used to run the ML model
 
 ### Report Files
-- `Improving Chord Prediction in Jazz Music using Melody Information.pdf` - the final report documenting the project
-- `figures/loss_comparison_for_chords_only_model.png` - a plot of training and validation loss for the chords-only model. This is referred to in the report
-- `figures/loss_comparison_for_model_with_melody.png` - a plot of training and validation loss for the model with melody information. This is referred to in the report
+- `Improving Chord Prediction in Jazz Music using Melody Information.pdf` - the final report documenting the project (TODO: update to latest version)
 - `model/permutation-test.py` - code used for testing the statistical significnace of the results
 
 ### Dependencies
