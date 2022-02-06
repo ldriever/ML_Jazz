@@ -18,7 +18,7 @@ from data_maker_helpers import transform_chords
 
 # Import and load relevant datasets
 
-path = os.path.join(os.getcwd(), 'data', 'wjazzd.db')
+path = os.path.join(os.getcwd(), 'datasets', 'wjazzd.db')
 engine = create_engine(f"sqlite:///{path}")
 
 
@@ -165,7 +165,7 @@ for row_index, row in df.iterrows():
     
     df.at[row_index, "notes"] = pitches
     
-df.to_csv("output_data_array.csv", index = False)
+df.to_csv("output_csv.csv", index = False)
     
     
 
