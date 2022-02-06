@@ -25,7 +25,7 @@ engine = create_engine(f"sqlite:///{path}")
 beats = pd.read_sql("beats", engine)
 melody = pd.read_sql("melody", engine)
 
-df = pd.read_csv('data/output_data_array.csv').drop(labels=["Unnamed: 0", "Unnamed: 0.1"], axis=1)
+df = pd.read_csv('datasets/output_data_array.csv').drop(labels=["Unnamed: 0", "Unnamed: 0.1"], axis=1)
 df = df.astype({"notes": str})
 
 #Get all chords
