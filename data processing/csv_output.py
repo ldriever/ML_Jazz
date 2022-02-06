@@ -18,14 +18,14 @@ from data_maker_helpers import transform_chords
 
 # Import and load relevant datasets
 
-path = os.path.join(os.getcwd(), 'datasets', 'wjazzd.db')
+current_path = os.path.dirname(os.path.realpath(__file__))
+path = os.path.join(current_path, 'datasets', 'wjazzd.db')
 engine = create_engine(f"sqlite:///{path}")
-
 
 beats = pd.read_sql("beats", engine)
 melody = pd.read_sql("melody", engine)
 
-df = pd.read_csv('datasets/output_data_array.csv').drop(labels=["Unnamed: 0", "Unnamed: 0.1"], axis=1)
+df = pd.read_csv(current_path + '/datasets/output_data_array.csv').drop(labels=["Unnamed: 0", "Unnamed: 0.1"], axis=1)
 df = df.astype({"notes": str})
 
 #Get all chords
@@ -165,8 +165,7 @@ for row_index, row in df.iterrows():
     
     df.at[row_index, "notes"] = pitches
     
-df.to_csv("output_csv.csv", index = False)
-    
+df.to_csv(current_path + "/output_csv.csv", index = False)
     
 
         
