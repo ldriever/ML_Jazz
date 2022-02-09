@@ -1,6 +1,6 @@
 # ML_Jazz
 
-***Authors: Leonhard Driever, Mels Loe Jagt, Kuan Lon Vu, Daniel Harasim, and Andrew McLeod***
+***Authors: Leonhard Driever, Mels Loe Jagt, Kuan Lon Vu, Daniel Harasim, Andrew McLeod, and Martin Rohrmeier***
 
 The code in this repository is aimed at chord prediction using machine learning. The aim of the project is to investigate whether including melody information in the input data is able to improve prediction accuracy compared to a model that only takes chord progressions as input. This is investigated using the [Weimar Jazz Database](https://jazzomat.hfm-weimar.de/dbformat/dboverview.html) and LSTM neural networks. The outcomes of the study are discussed in the article `Improving Chord Prediction in Jazz Music using Melody Information` which is submitted to the 2022 SMC and can also be found in this repository.
 
