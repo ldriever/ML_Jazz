@@ -46,7 +46,6 @@ ML_Jazz:
 - `csv_output.py`- a python file with functions used for filling in melody and tune information into the output csv file.
 
 ### Machine Learning Files 
-##### *(these can be found in the `model` folder)*
 - `NN_data_helpers.py` - a python file with helper functions that convert the processed data into the format suitable to be handled by the ML model
 - `LSTM_maker.py` - a python file in which the neural network is defined
 - `ML_core_functions.py`- a python file containing wrapper functions for the tasks involved in training and running the ML model
